@@ -5,10 +5,14 @@ Usar prompt para tomar valores de entrada. Consejo ver tipo de dato function.
 Consejo: revisar Output (pág 9
 */
 
-var num1, num2;
-    num1 = parseFloat(prompt("Ingresa un numero1: "));
-    num2 = parseFloat(prompt("Ingresa otro numero2"));
-    function suma(num1, num2) {
-        return num1 + num2
-    }
-    alert(suma(num1, num2));
+function sumar(num1, num2){
+    total = num1 + num2; 
+    return total;
+}
+
+let valorA = prompt('ingrese el primer numero: ');
+let valorB = prompt('ingrese el segundo valor: ');
+
+let resultado = sumar(Number(valorA), Number(valorB));
+
+document.getElementById("resultado").innerHTML = "el resultado es: " + resultado
